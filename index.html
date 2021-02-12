@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO - VanillaJS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>TODO - VanillaJS</h1>
+      <form>
+        <input type="text" placeholder="what's on your mind..." id="taskname" />
+        <button id="add" class="btn">Add</button>
+        <div class="check-container">
+          <input
+            type="radio"
+            name="status"
+            value="all"
+            onclick="render()"
+            checked
+          />
+          <label for="status">All</label>
+          <input type="radio" name="status" value="active" onclick="render()" />
+          <label for="status">Active</label>
+          <input
+            type="radio"
+            name="status"
+            value="completed"
+            onclick="render()"
+          />
+          <label for="status">Completed</label>
+        </div>
+      </form>
+    </header>
+
+    <section class="main">
+      <ul class="todo-list"></ul>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

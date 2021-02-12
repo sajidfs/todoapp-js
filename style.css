@@ -1,0 +1,101 @@
+html, body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: orangered;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+input[type=text] {
+  width: 100%;
+  padding:1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn {
+  color: white;
+  background-color: orangered;
+  width: 100%;
+  padding:1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight:bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-item {
+  color: white;
+  background-color: orangered;
+  padding:1rem;
+  margin: 0.5rem;
+  font-weight:bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-item-complete {
+  color: white;
+  background-color: grey;
+  padding:1rem;
+  margin: 0.5rem;
+  font-weight:bolder;
+  border: none;
+  border-radius: 5px;
+  cursor:unset;
+}
+
+ul {
+  list-style: none;
+  box-shadow: none;
+}
+
+ul li{
+  padding: .5rem;
+}
+
+.item {
+  text-decoration: none;
+  color: black;
+} 
+
+.item-complete{
+  text-decoration: line-through;
+  color: red;
+}
+
+.card{
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .5em;
+}
+.card-body{
+  flex: 1 1 auto;
+  /* padding:1rem 1rem; */
+}
+.check-container {
+  padding: 1rem;
+  background-color: #424240;
+  color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
