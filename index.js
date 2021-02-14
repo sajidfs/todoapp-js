@@ -23,9 +23,12 @@ const markComplete = (e) => {
     if (task.id === findTask.id) {
       tasks[index] = findTask;
 
-      e.target.classList.toggle("btn-item-complete");
-      e.target.nextElementSibling.classList.toggle("btn-item-complete");
       e.target.previousElementSibling.classList.toggle("item-complete");
+      e.target.classList.toggle("btn-item-complete");
+      e.target.disabled= true;
+      e.target.nextElementSibling.classList.toggle("btn-item-complete");
+      e.target.nextElementSibling.disabled = true;
+      
     }
   });
   saveToLocal();
@@ -50,7 +53,7 @@ const addToList = (e) => {
 
   const taskname = document.getElementById("taskname").value;
 
-  if(!taskname){
+  if (!taskname) {
     alert('Task name is required.');
     return;
   }
