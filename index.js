@@ -69,8 +69,8 @@ const addToList = (e) => {
         <div class='card'>
             <div class='card-body'>
                 <h5 class='item'>${task.title}</h5>
-                <button class='btn-item' id="${task.id}" onClick="markComplete(event)">Complete</button>
-                <button class='btn-item' id="${task.id}" onClick="deleteTask(event)">Delete</button>
+                <button class='btn-item' id="${task.id}" onClick="markComplete(event)">✓</button>
+                <button class='btn-item' id="${task.id}" onClick="deleteTask(event)">x</button>
             </div>
         </div>`;
 
@@ -149,7 +149,7 @@ const render = () => {
       btnComplete.disabled = false;
     }
     btnComplete.addEventListener("click", markComplete);
-    btnComplete.textContent = "Complete";
+    btnComplete.textContent = "✓";
 
     const btnDelete = document.createElement("button");
     btnDelete.id = task.id;
@@ -161,7 +161,7 @@ const render = () => {
       btnDelete.disabled = false;
     }
     btnDelete.addEventListener("click", deleteTask);
-    btnDelete.textContent = "Delete";
+    btnDelete.textContent = "x";
 
     cardBody.appendChild(cardTitle);
     cardBody.appendChild(btnComplete);

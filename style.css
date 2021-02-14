@@ -46,7 +46,7 @@ input[type=text] {
 }
 
 .btn-item-complete {
-  color: white;
+  color: black;
   background-color: grey;
   padding:1rem;
   margin: 0.5rem;
@@ -67,7 +67,7 @@ ul li{
 
 .item {
   text-decoration: none;
-  color: black;
+  color: white;
 } 
 
 .item-complete{
@@ -76,7 +76,7 @@ ul li{
 }
 
 .card{
-  background-color: #fff;
+  background-color: black;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: .5em;
@@ -98,5 +98,5 @@ ul li{
   justify-content: center;
   text-align: center;
   border-radius: 5px;
-  background-color: black;
+  background-color: white;
 }
