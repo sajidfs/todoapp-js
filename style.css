@@ -5,7 +5,7 @@ html, body{
   text-align: center;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 1rem;
 }
 
 h1 {
@@ -56,8 +56,13 @@ input[type=text] {
   cursor:unset;
 }
 
-ul {
+.todo-list {
   list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
   box-shadow: none;
 }
 
@@ -94,9 +99,6 @@ ul li{
 }
 
 .main {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   border-radius: 5px;
   background-color: white;
 }
