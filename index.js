@@ -155,10 +155,8 @@ const render = () => {
     btnDelete.id = task.id;
     if (task.completed) {
       btnDelete.classList.add("btn-item-complete");
-      btnDelete.disabled = true;
     } else {
       btnDelete.classList.add("btn-item");
-      btnDelete.disabled = false;
     }
     btnDelete.addEventListener("click", deleteTask);
     btnDelete.textContent = "x";
